@@ -1,0 +1,71 @@
+.header
+  background-color: $bgc
+  padding: 26px 0 26px 0
+  &-navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-logo
+    width: 90px
+    max-height: 28px
+.navigation
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 412px
+  &-item
+    &__link
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $heading-color
+    &_menu
+      cursor: pointer
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $heading-color
+      position: relative
+    &__arrow
+      transition: 0.4s
+  &-button
+    width: 131px
+    border-radius: 8px
+    border: 2px solid #1565D8
+    background-color: #F7FAFD
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #1565D8
+    padding: auto
+    height: 48px
+  &__button
+    margin-left: 44px
+.navigation-item_menu
+  &:hover .navigation-item__arrow
+    transform: rotate(180deg)
+.hidden
+  &-menu
+    position: absolute
+    padding: 10px
+    width: 160px
+    background-color: $heading-color
+    border-radius: 8px
+    z-index: 99
+    display: none
+    transition: all 0.3s ease-in
+    &__visible
+      margin-top: 10px
+      opacity: 1
+      display: block
+    &__item
+      margin-bottom: 8px
+    &__link
+      font-weight: 600
+      font-size: 14px
+      line-height: 22px
+      color: #FAFDFF
