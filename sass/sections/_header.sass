@@ -5,9 +5,27 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &__menu
+      &-button
+        width: 22px
+        height: 18px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        outline: none
+        border: none
+        background-color: transparent
+        display: none
   &-logo
     width: 90px
     max-height: 28px
+.menu
+  &-button
+    &__line
+      height: 2px
+      width: 100%
+      background-color: $menu-btn-fill
+      border-radius: 50%
 .navigation
   display: flex
   justify-content: space-between
@@ -44,7 +62,7 @@
     padding: auto
     height: 48px
   &__button
-    margin-left: 44px
+    margin-left: 54px
 .navigation-item_menu
   &:hover .navigation-item__arrow
     transform: rotate(180deg)
