@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -222,7 +223,7 @@
     </section>
     <section class="partners container">
       <div class="partners-container">
-        <span class="partners__name-block">Наши партнеры</span>
+        <span class="partners__name-block name-block">Наши партнеры</span>
         <div class="partners-description partners-description_description">
           <h2 class="partners__heading">
             Мы работали с ними,<br />
@@ -428,57 +429,294 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="projects">
+    <section class="project">
       <div class="container">
-        <span class="partners__name-block">портфолио</span>
-        <h2 class="partners__heading">Наши проекты</h2>
+        <span class="project__name-block name-block">портфолио</span>
+        <h2 class="project__heading">Наши проекты</h2>
       </div>
       <!-- /.container -->
-      <div class="swiper-container hotel-slider hotel__slider">
+      <div class="swiper-container project-slider project-slider_slider">
         <!-- Additional required wrapper -->
+        <button class="project-slider__button project-slider__button--prev">
+          <img
+            src="img/_our_projects/arrow-next.svg"
+            class="project-slider__icon"
+            alt="Назад"
+          />
+        </button>
+        <button class="project-slider__button project-slider__button--next">
+          <img
+            src="img/_our_projects/arrow-next.svg"
+            class="project-slider__icon"
+            alt="Вперед"
+          />
+        </button>
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide hotel-slider__item">
+          <div class="swiper-slide project-slider__item">
             <img
               src="img/_our_projects/1project.png"
               alt="Slide"
-              class="hotel-slider__img"
+              class="project-slider__img"
             />
+            <div class="project-slider__wrap">
+              <span class="project-slider__text">Вебсайт, Лендинг</span>
+              <h3 class="project-slider__name">Проект Вебсайта</h3>
+            </div>
+            <!-- /.project-slider__wrap -->
           </div>
-          <div class="swiper-slide hotel-slider__item">
+          <div class="swiper-slide project-slider__item">
             <img
               src="img/_our_projects/2project.png"
               alt="Slide"
-              class="hotel-slider__img"
+              class="project-slider__img"
             />
+            <div class="project-slider__wrap">
+              <span class="project-slider__text"
+                >Паенль навигации, UI/UX Дизайн</span
+              >
+              <h3 class="project-slider__name">Проект Дизайна</h3>
+            </div>
+            <!-- /.project-slider__wrap -->
           </div>
-          <div class="swiper-slide hotel-slider__item">
+          <div class="swiper-slide project-slider__item">
             <img
               src="img/_our_projects/3project.png"
               alt="Slide"
-              class="hotel-slider__img"
+              class="project-slider__img"
             />
+            <div class="project-slider__wrap">
+              <span class="project-slider__text"
+                >Приложения, Мобильные, iOS</span
+              >
+              <h3 class="project-slider__name">Проекты приложений</h3>
+            </div>
+            <!-- /.project-slider__wrap -->
           </div>
-          <div class="swiper-slide hotel-slider__item">
+          <div class="swiper-slide project-slider__item">
             <img
               src="img/_our_projects/4project.png"
               alt="Slide"
-              class="hotel-slider__img"
+              class="project-slider__img"
             />
+            <div class="project-slider__wrap">
+              <span class="project-slider__text">Instagram</span>
+              <h3 class="project-slider__name">ПроектИллюстраций</h3>
+            </div>
+            <!-- /.project-slider__wrap -->
           </div>
         </div>
         <!-- /swiper-wrapper -->
-
-        <button class="hotel-slider__button hotel-slider__button--prev">
-          <img src="img/_our_projects/arrow-prev.svg" alt="" />
-        </button>
-        <button class="hotel-slider__button hotel-slider__button--next">
-          <img src="img/_our_projects/arrow-next.svg" alt="" />
-        </button>
       </div>
-      <!-- /hotel-slider -->
+      <!-- /project-slider -->
+    </section>
+    <section class="reviews container">
+      <span class="reviews__name-block name-block">Отзывы</span>
+      <h2 class="reviews__heading">Что говорят о нас</h2>
+      <div class="swiper-container reviews-slider reviews-slider_slider">
+        <!-- Additional required wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--prev">
+          <img
+            src="img/_reviews/arrow-next.svg"
+            class="reviews-slider__icon"
+            alt="Назад"
+          />
+        </button>
+        <button class="reviews-slider__button reviews-slider__button--next">
+          <img
+            src="img/_reviews/arrow-next.svg"
+            class="reviews-slider__icon"
+            alt="Вперед"
+          />
+        </button>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide reviews-slider__item">
+            <div class="reviews-slider__wrap">
+              <img
+                src="img/_reviews/1review.png"
+                alt="Slide"
+                class="reviews-slider__img"
+              />
+              <div class="reviews-slider__name">
+                <h4 class="reviews-slider__heading">Jaquon Hart</h4>
+                <span class="reviews-slider__place"
+                  >Вице-президент - компания Lizlle</span
+                >
+              </div>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__wrap -->
+            <p class="reviews-slider__text">
+              «Их навыки и опыт в области пользовательского интерфейса /
+              пользовательского интерфейса были ключевыми для выявления
+              потенциальных проблемных моментов в наших бизнес-процессах,
+              которые они прекрасно исправили или оптимизировали».
+            </p>
+          </div>
+          <!-- /reviews-slider__item -->
+          <div class="swiper-slide reviews-slider__item">
+            <div class="reviews-slider__wrap">
+              <img
+                src="img/_reviews/2review.png"
+                alt="Slide"
+                class="reviews-slider__img"
+              />
+              <div class="reviews-slider__name">
+                <h4 class="reviews-slider__heading">Valdemar Forsberg</h4>
+                <span class="reviews-slider__place"
+                  >Основатель Digitac Finance</span
+                >
+              </div>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__wrap -->
+            <p class="reviews-slider__text">
+              Ehya подтолкнул нас к мысли, выходящей за рамки наших
+              первоначальных возможностей и воображения, при этом гарантируя,
+              что дизайн и форма платформы постоянно корректируются на основе
+              данных.
+            </p>
+          </div>
+          <!-- /reviews-slider__item -->
+          <div class="swiper-slide reviews-slider__item">
+            <div class="reviews-slider__wrap">
+              <img
+                src="img/_reviews/3review.jpg"
+                alt="Slide"
+                class="reviews-slider__img"
+              />
+              <div class="reviews-slider__name">
+                <h4 class="reviews-slider__heading">Harrion Harry</h4>
+                <span class="reviews-slider__place"
+                  >Вице-президент - компания Apple</span
+                >
+              </div>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__wrap -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+              sint numquam ratione ad nostrum voluptate, itaque similique!
+              Aliquam labore, culpa provident maiores nemo rem veritatis
+              inventore corporis cumque, ipsum sunt?
+            </p>
+          </div>
+          <!-- /reviews-slider__item -->
+          <div class="swiper-slide reviews-slider__item">
+            <div class="reviews-slider__wrap">
+              <img
+                src="img/_reviews/4review.jpg"
+                alt="Slide"
+                class="reviews-slider__img"
+              />
+              <div class="reviews-slider__name">
+                <h4 class="reviews-slider__heading">Justin Bubkin</h4>
+                <span class="reviews-slider__place"
+                  >Вице-президент - компания Circle</span
+                >
+              </div>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__wrap -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              maxime voluptate vero explicabo, iure sapiente aperiam, ullam
+              molestias facere dicta ab voluptatibus tempora corporis esse?
+              Soluta facilis eaque aliquam? Facilis!
+            </p>
+          </div>
+          <!-- /reviews-slider__item -->
+        </div>
+        <!-- /swiper-wrapper -->
+      </div>
+      <!-- /reviews-slider -->
+    </section>
+    <section class="contacts contacts_container">
+      <span class="contacts__name-block name-block">Наши соцсети</span>
+      <h2 class="contacts__heading">Будем друзьями</h2>
+      <div class="contacts__wrap">
+        <div class="contacts-card contacts-card_card">
+          <div class="contacts-card__icon">
+            <img
+              src="img/_contacts/inst.svg"
+              alt="instagram"
+              class="contacts-card__img"
+            />
+          </div>
+          <!-- /.contacts-card__icon -->
+          <h4 class="contacts-card__heading">Instagram</h4>
+          <span class="contacts-card__text"
+            >Для нашего портфолио и повседневных дел в офисе</span
+          >
+          <button class="contacts-card__button">
+            Подписаться
+            <img src="img/_contacts/arrow.svg" alt="" />
+          </button>
+        </div>
+        <!-- /.contacts__card -->
+        <div class="contacts-card contacts-card_card">
+          <div class="contacts-card__icon">
+            <img
+              src="img/_contacts/twitter.svg"
+              alt="twitter"
+              class="contacts-card__img"
+            />
+          </div>
+          <!-- /.contacts-card__icon -->
+          <h4 class="contacts-card__heading">Twitter</h4>
+          <span class="contacts-card__text"
+            >Для случайных мыслей и интересных вещей</span
+          >
+          <button class="contacts-card__button">
+            Подписаться
+            <img src="img/_contacts/arrow.svg" alt="" />
+          </button>
+        </div>
+        <!-- /.contacts__card -->
+        <div class="contacts-card contacts-card_card">
+          <div class="contacts-card__icon">
+            <img
+              src="img/_contacts/dribbble.svg"
+              alt="dribbble"
+              class="contacts-card__img"
+            />
+          </div>
+          <!-- /.contacts-card__icon -->
+          <h4 class="contacts-card__heading">Dribbble</h4>
+          <span class="contacts-card__text"
+            >Для обновленных и подробных всех нашего портфолио</span
+          >
+          <button class="contacts-card__button">
+            Подписаться
+            <img src="img/_contacts/arrow.svg" alt="" />
+          </button>
+        </div>
+        <!-- /.contacts__card -->
+        <div class="contacts-card contacts-card_card">
+          <div class="contacts-card__icon">
+            <img
+              src="img/_contacts/youtube.svg"
+              alt="youtube"
+              class="contacts-card__img"
+            />
+          </div>
+          <!-- /.contacts-card__icon -->
+          <h4 class="contacts-card__heading">Youtube</h4>
+          <span class="contacts-card__text"
+            >Для нашего видео руководства и советах по индустрии дизайна</span
+          >
+          <button class="contacts-card__button">
+            Подписаться
+            <img src="img/_contacts/arrow.svg" alt="" />
+          </button>
+        </div>
+        <!-- /.contacts__card -->
+      </div>
+      <!-- /.contacts__wrap -->
     </section>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

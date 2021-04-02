@@ -13,16 +13,33 @@ $(document).ready(function() {
     });
     
 
-    var hotelSlider = new Swiper('.hotel-slider', {
-        loop: true,
+    var prijectSlider = new Swiper('.project-slider', {
+        loop: false,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: '.project-slider__button--next',
+            prevEl: '.project-slider__button--prev',
+        },
+        slidesPerView: 3,
+        
+        
+    });
+     var reviewSlider = new Swiper('.reviews-slider', {
+        loop: false,
         keyboard: {
             enabled: true,
             onlyInViewport: true,
         },
         navigation: {
-            nextEl: '.hotel-slider__button--next',
-            prevEl: '.hotel-slider__button--prev',
+            nextEl: '.reviews-slider__button--next',
+            prevEl: '.reviews-slider__button--prev',
         },
+        slidesPerView: 2,
+        
+        
     });
 
 });
