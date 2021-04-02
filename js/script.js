@@ -13,4 +13,16 @@ $(document).ready(function() {
     });
     
 
+    var hotelSlider = new Swiper('.hotel-slider', {
+        loop: true,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+        navigation: {
+            nextEl: '.hotel-slider__button--next',
+            prevEl: '.hotel-slider__button--prev',
+        },
+    });
+
 });
