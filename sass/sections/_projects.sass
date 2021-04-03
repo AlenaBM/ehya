@@ -1,14 +1,53 @@
 .project
   padding: 100px 0 50px 0
+  position: relative
+  overflow-x: hidden
+  &__heading
+    margin-bottom: 48px
+    &__wrap
+      display: flex
+      justify-content: space-between
+      max-width: 1021px
+      align-items: flex-start
   &-slider
     &_slider
       margin-left: 150px
     &__img
-      max-width: 360px
       max-height: 400px
+      max-width: 360px
+    &__text
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      color: #1565D8
+      margin-bottom: 16px
+    &__name
+      font-weight: bold
+      font-size: 26px
+      line-height: 40px
+      letter-spacing: 0.2px
+      color: $heading-color
     &__item
       border-radius: 8px
       overflow: hidden
+      max-height: 524px
     &__wrap
+      border-radius: 0px 0px 8px 8px
       border: 1px solid #DDE6F4
-      border-radius: 8px
+      max-width: 360px
+      padding: 24px
+      margin-top: -4px
+    &__button
+      @include arrow
+      transform: translateY(-50%)
+      z-index: 999
+      width: 56px
+      height: 56px
+      background-size: 14px
+      &--prev
+        left: -40px
+        background-image: url(../img/_our_projects/arrow-prev.svg)
+      &--next
+        background-image: url(../img/_our_projects/arrow-next.svg)
+      &-wrap
+        position: relative

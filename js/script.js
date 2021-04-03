@@ -23,8 +23,7 @@ $(document).ready(function() {
             nextEl: '.project-slider__button--next',
             prevEl: '.project-slider__button--prev',
         },
-        slidesPerView: 3,
-        
+        slidesPerView: 3.4,
         
     });
      var reviewSlider = new Swiper('.reviews-slider', {
@@ -38,7 +37,6 @@ $(document).ready(function() {
             prevEl: '.reviews-slider__button--prev',
         },
         slidesPerView: 2,
-        
         
     });
 

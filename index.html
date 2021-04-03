@@ -11,6 +11,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -25,7 +50,7 @@
           >
             <img src="img/logo.svg" alt="Логотип ehya" />
           </a>
-          <div class="navigation">
+          <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a
@@ -147,7 +172,7 @@
             <button class="navigation-button navigation__button button">
               Получить
             </button>
-          </div>
+          </nav>
           <!-- /.navigation -->
           <button class="header-navbar__menu-button menu-button">
             <span class="menu-button__line"></span>
@@ -432,25 +457,23 @@
     <section class="project">
       <div class="container">
         <span class="project__name-block name-block">портфолио</span>
-        <h2 class="project__heading">Наши проекты</h2>
+        <div class="project__heading__wrap">
+          <h2 class="project__heading">Наши проекты</h2>
+          <div class="project-slider__button-wrap">
+            <button
+              class="project-slider__button project-slider__button--prev"
+            ></button>
+            <button
+              class="project-slider__button project-slider__button--next"
+            ></button>
+          </div>
+          <!-- /.project-slider__button-wrap -->
+        </div>
+        <!-- /.project__heading__wrap -->
       </div>
       <!-- /.container -->
-      <div class="swiper-container project-slider project-slider_slider">
+      <div class="project-slider project-slider_slider">
         <!-- Additional required wrapper -->
-        <button class="project-slider__button project-slider__button--prev">
-          <img
-            src="img/_our_projects/arrow-next.svg"
-            class="project-slider__icon"
-            alt="Назад"
-          />
-        </button>
-        <button class="project-slider__button project-slider__button--next">
-          <img
-            src="img/_our_projects/arrow-next.svg"
-            class="project-slider__icon"
-            alt="Вперед"
-          />
-        </button>
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide project-slider__item">
@@ -501,7 +524,7 @@
             />
             <div class="project-slider__wrap">
               <span class="project-slider__text">Instagram</span>
-              <h3 class="project-slider__name">ПроектИллюстраций</h3>
+              <h3 class="project-slider__name">Проект Иллюстраций</h3>
             </div>
             <!-- /.project-slider__wrap -->
           </div>
@@ -513,29 +536,32 @@
     <section class="reviews container">
       <span class="reviews__name-block name-block">Отзывы</span>
       <h2 class="reviews__heading">Что говорят о нас</h2>
+      <button class="reviews-slider__button reviews-slider__button--prev">
+        <img
+          src="img/_reviews/arrow-next.svg"
+          class="reviews-slider__icon"
+          alt="Назад"
+        />
+      </button>
+      <button class="reviews-slider__button reviews-slider__button--next">
+        <img
+          src="img/_reviews/arrow-next.svg"
+          class="reviews-slider__icon"
+          alt="Вперед"
+        />
+      </button>
       <div class="swiper-container reviews-slider reviews-slider_slider">
         <!-- Additional required wrapper -->
-        <button class="reviews-slider__button reviews-slider__button--prev">
-          <img
-            src="img/_reviews/arrow-next.svg"
-            class="reviews-slider__icon"
-            alt="Назад"
-          />
-        </button>
-        <button class="reviews-slider__button reviews-slider__button--next">
-          <img
-            src="img/_reviews/arrow-next.svg"
-            class="reviews-slider__icon"
-            alt="Вперед"
-          />
-        </button>
+
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide reviews-slider__item">
+          <div
+            class="swiper-slide reviews-slider__item reviews-slider__item--first"
+          >
             <div class="reviews-slider__wrap">
               <img
                 src="img/_reviews/1review.png"
-                alt="Slide"
+                alt="Avatar"
                 class="reviews-slider__img"
               />
               <div class="reviews-slider__name">
@@ -559,7 +585,7 @@
             <div class="reviews-slider__wrap">
               <img
                 src="img/_reviews/2review.png"
-                alt="Slide"
+                alt="Avatar"
                 class="reviews-slider__img"
               />
               <div class="reviews-slider__name">
@@ -583,7 +609,7 @@
             <div class="reviews-slider__wrap">
               <img
                 src="img/_reviews/3review.jpg"
-                alt="Slide"
+                alt="Avatar"
                 class="reviews-slider__img"
               />
               <div class="reviews-slider__name">
@@ -607,7 +633,7 @@
             <div class="reviews-slider__wrap">
               <img
                 src="img/_reviews/4review.jpg"
-                alt="Slide"
+                alt="Avatar"
                 class="reviews-slider__img"
               />
               <div class="reviews-slider__name">
@@ -651,7 +677,7 @@
           >
           <button class="contacts-card__button">
             Подписаться
-            <img src="img/_contacts/arrow.svg" alt="" />
+            <img src="img/_contacts/arrow.svg" alt="Перейти" />
           </button>
         </div>
         <!-- /.contacts__card -->
@@ -708,7 +734,7 @@
           >
           <button class="contacts-card__button">
             Подписаться
-            <img src="img/_contacts/arrow.svg" alt="" />
+            <img src="img/_contacts/arrow.svg" alt="Перейти" />
           </button>
         </div>
         <!-- /.contacts__card -->
@@ -731,6 +757,260 @@
       </div>
       <!-- /.container -->
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap footer-wrap_block">
+          <div class="footer__list">
+            <a
+              href="#"
+              target="_blank"
+              rel="nofollow noopener"
+              class="footer__logo-link"
+            >
+              <img
+                src="img/_footer/logo-white.svg"
+                class="footer__logo"
+                alt="Логотип"
+              />
+            </a>
+            <span class="footer__text"
+              >Создайте современный и креативный веб-сайт с crealand</span
+            >
+            <div class="footer__links">
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener"
+                class="footer__social-net-link"
+              >
+                <img src="img/_footer/google.svg" alt="Google" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener"
+                class="footer__social-net-link"
+              >
+                <img src="img/_footer/twitter.svg" alt="Twitter" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener"
+                class="footer__social-net-link"
+              >
+                <img src="img/_footer/instagram.svg" alt="Instagram" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener"
+                class="footer__social-net-link"
+              >
+                <img src="img/_footer/linkedin.svg" alt="Linkedin" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener"
+                class="footer__social-net-link"
+              >
+                <img src="img/_footer/youtube.svg" alt="YouTube" />
+              </a>
+            </div>
+            <!-- /.footer__links -->
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__list footer__products">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Лендинг</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Функции</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Скидки
+                </a>
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Расценки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /footer__list -->
+          <div class="footer__list footer__services">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Дизайн</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Темы</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Иллюстрации
+                </a>
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >UI Kit</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /footer__list -->
+          <div class="footer__list footer__company">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >О нас</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Условия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Политика конфиденциальности
+                </a>
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /footer__list -->
+          <div class="footer__list footer__more">
+            <h3 class="footer__title">Более</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Лицензия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="footer__link"
+                  >Измененния</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /footer__list -->
+        </div>
+        <!-- /.footer-wrap -->
+        <div class="footer__like-wrap">
+          <div class="like-block like-block_wrap">
+            <img src="img/_footer/like.svg" alt="Лайк" />
+          </div>
+          <!-- /.like-block -->
+          <span class="like-text">Copyright © 2019. Crafted with love.</span>
+        </div>
+        <!-- /.footer__like-wrap -->
+      </div>
+      <!-- /.container -->
+    </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
