@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-  
+ 
   var navButton = $(".navigation-item_menu--landing");
     navButton.on("click", function() {
         $(".hidden-menu--landing").toggleClass("hidden-menu__visible");
@@ -39,5 +38,13 @@ $(document).ready(function() {
         slidesPerView: 2,
         
     });
+    
+    $("#down").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    
 
 });
