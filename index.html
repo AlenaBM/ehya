@@ -42,12 +42,7 @@
     <header class="header">
       <div class="container">
         <div class="header-navbar">
-          <a
-            class="header-logo"
-            href="#"
-            target="_blank"
-            rel="nofollow noopener"
-          >
+          <a class="header-logo" href="https://alena-web.ru/ehya/">
             <img src="img/logo.svg" alt="Логотип ehya" />
           </a>
           <nav class="navigation">
@@ -68,7 +63,7 @@
                 <img
                   src="img/arrow-down.svg"
                   alt="Стрелка меню"
-                  class="navigation-item__arrow"
+                  class="navigation-item__arrow-lend"
                 />
                 <ul class="hidden-menu hidden-menu--landing">
                   <li class="hidden-menu__item">
@@ -117,7 +112,7 @@
                 <img
                   src="img/arrow-down.svg"
                   alt="Стрелка меню"
-                  class="navigation-item__arrow"
+                  class="navigation-item__arrow-pages"
                 />
                 <ul class="hidden-menu hidden-menu--pages">
                   <li class="hidden-menu__item">
@@ -197,7 +192,11 @@
               Мы даем результаты, помогающие Вам добиться экономии средств и
               времени без риска или накладных расходов на управление
             </p>
-            <button class="company__button button">Наше портфолио</button>
+            <div id="projects" class="company__button button">
+              <a href="#ourworks" class="company__button__link"
+                >Наше портфолио</a
+              >
+            </div>
           </div>
           <!-- /.company-description -->
           <div class="company-arrow" id="down">
@@ -233,7 +232,7 @@
           </div>
           <!-- /.company-images -->
           <img
-            class="company-images__pic__phone-version"
+            class="company__pic__phone-version"
             src="img/_company/mobile_version.png"
             alt="Статистика: мобильная версия"
           />
@@ -306,7 +305,7 @@
                 alt="Партнер: Google"
             /></a>
           </li>
-          <li class="partners-brands__item--last">
+          <li class="partners-brands__item-last">
             <a
               href="#"
               class="partners-brands__link"
@@ -450,20 +449,16 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="project">
+    <section class="project" id="ourworks">
       <div class="container">
         <span class="project__name-block name-block">портфолио</span>
         <div class="project__heading__wrap">
           <h2 class="project__heading">Наши проекты</h2>
-          <div class="project-slider__button-wrap">
-            <button
-              class="project-slider__button project-slider__button--prev"
-            ></button>
-            <button
-              class="project-slider__button project-slider__button--next"
-            ></button>
+          <div class="project__button-wrap">
+            <button class="project__button project__button--prev"></button>
+            <button class="project__button project__button--next"></button>
           </div>
-          <!-- /.project-slider__button-wrap -->
+          <!-- /.project__button-wrap -->
         </div>
         <!-- /.project__heading__wrap -->
       </div>
@@ -532,17 +527,17 @@
     <section class="reviews container">
       <span class="reviews__name-block name-block">Отзывы</span>
       <h2 class="reviews__heading">Что говорят о нас</h2>
-      <button class="reviews-slider__button reviews-slider__button--prev">
+      <button class="reviews__button reviews__button--prev">
         <img
           src="img/_reviews/arrow-next.svg"
-          class="reviews-slider__icon"
+          class="reviews__icon"
           alt="Назад"
         />
       </button>
-      <button class="reviews-slider__button reviews-slider__button--next">
+      <button class="reviews__button reviews__button--next">
         <img
           src="img/_reviews/arrow-next.svg"
-          class="reviews-slider__icon"
+          class="reviews__icon"
           alt="Вперед"
         />
       </button>
@@ -757,12 +752,7 @@
       <div class="container">
         <div class="footer-wrap footer-wrap_block">
           <div class="footer__list">
-            <a
-              href="#"
-              target="_blank"
-              rel="nofollow noopener"
-              class="footer__logo-link"
-            >
+            <a href="https://alena-web.ru/ehya/" class="footer__logo-link">
               <img
                 src="img/_footer/logo-white.svg"
                 class="footer__logo"
