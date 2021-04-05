@@ -32,17 +32,22 @@
     max-width: 457px
     margin-bottom: 63px
   &__button
-    background: $heading-color
+    background-color: $heading-color
     border-radius: 8px
     color: #fff
-    padding: 16px 24px 15px 24px
-    width: 242px
+    padding: 14px 16px
     max-width: 242px
+    width: 242px
     font-weight: bold
     font-size: 18px
     line-height: 25px
-    &__link
-      color: #fff
+    border: 2px solid $heading-color
+    height: 55px
+    transition: 0.4s
+    display: inline-block
+    &:hover
+      background-color: #fff
+      color: $heading-color
   &-images
     position: absolute
     width: 755px
